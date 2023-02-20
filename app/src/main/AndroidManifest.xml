@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.hotelbooking.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.hotelbooking.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <activity
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" android:name="com.facebook.FacebookActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hotelbooking.app.modules.signupblank.ui.SignUpBlankActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.filterresult.ui.FilterResultActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.gallery.ui.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.location.ui.LocationActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/str_maps_api_key"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.hoteldetails.ui.HotelDetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.onboardingtwo.ui.OnboardingTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.bookingongoingtabcontainer.ui.BookingOngoingTabContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.welcomescreen.ui.WelcomeScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.editprofile.ui.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.hotelbooking.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hotelbooking.app.modules.onboardingone.ui.OnboardingOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.letsyouin.ui.LetSYouInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.confirmpayment.ui.ConfirmPaymentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.choosepaymentmethod.ui.ChoosePaymentMethodActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.notifications.ui.NotificationsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.recentlybooked.ui.RecentlyBookedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.review.ui.ReviewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.viewticket.ui.ViewTicketActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.bookingname.ui.BookingNameActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.signin.ui.SignInActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.homescreencontainer.ui.HomeScreenContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.addnewcard.ui.AddNewCardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.searchtype.ui.SearchTypeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.refundmethod.ui.RefundMethodActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.selectdateguest.ui.SelectDateGuestActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.forgotpasswordtypeotp.ui.ForgotPasswordTypeOtpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.searchfilter.ui.SearchFilterActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.notificationsettings.ui.NotificationSettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.fillprofile.ui.FillProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.security.ui.SecurityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.mybookmarks.ui.MyBookmarksActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.forgotpassword.ui.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.onboardingthree.ui.OnboardingThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.cardadded.ui.CardAddedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hotelbooking.app.modules.createnewpassword.ui.CreateNewPasswordActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
