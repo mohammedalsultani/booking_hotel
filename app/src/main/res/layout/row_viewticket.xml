@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="viewticketRowModel" type="com.hotelbooking.app.modules.viewticket.data.model.ViewticketRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowname"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnname"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{viewticketRowModel.txtName}"
+                style="@style/txtUrbanistregular16_1" tools:text="@string/lbl_name"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtNamevalue"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{viewticketRowModel.txtNamevalue}"
+                style="@style/txtUrbanistsemibold18" tools:text="@string/lbl_daniel_austin"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnphonenumber"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPhoneNumber"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{viewticketRowModel.txtPhoneNumber}"
+                style="@style/txtUrbanistregular16_1" tools:text="@string/lbl_phone_number"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPhonenumbervalue"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.01" android:singleLine="true"
+                android:text="@{viewticketRowModel.txtPhonenumbervalue}"
+                style="@style/txtUrbanistsemibold18" tools:text="@string/msg_1_123_456_789_000"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSlidernameModel" type="com.hotelbooking.app.modules.onboardingthree.data.model.ImageSliderSlidernameModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnname"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@{imageSliderSlidernameModel.txtName}"
+            style="@style/txtUrbanistromanbold32" tools:text="@string/msg_let_s_discover"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.01"
+            android:text="@{imageSliderSlidernameModel.txtDescription}"
+            style="@style/txtUrbanistregular16_1" tools:text="@string/msg_lorem_ipsum_dol3"/>
+    </LinearLayout>
+</layout>

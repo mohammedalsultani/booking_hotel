@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderfindthebesthotelsModel" type="com.hotelbooking.app.modules.onboardingtwo.data.model.ImageSliderSliderfindthebesthotelsModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnfindthebesthotels"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtFindthebesthotels"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@{imageSliderSliderfindthebesthotelsModel.txtFindthebesthotels}"
+            style="@style/txtUrbanistromanbold32" tools:text="@string/msg_find_the_best_h"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtLoremipsumdolorOne"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.01"
+            android:text="@{imageSliderSliderfindthebesthotelsModel.txtLoremipsumdolorOne}"
+            style="@style/txtUrbanistregular16_1" tools:text="@string/msg_lorem_ipsum_dol3"/>
+    </LinearLayout>
+</layout>
